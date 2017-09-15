@@ -64,6 +64,19 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <style>
+        #defenderfield-map {
+            height: 300px;
+            width: 100%;
+        }
+
+        #gleisdreieck-map {
+            height: 300px;
+            width: 100%;
+        }
+    </style>
+
+
 </head>
 <body class="no-header-page  wsite-page-index wsite-theme-light">
 <div class="wrapper">
@@ -108,73 +121,66 @@
                                     <tr class="wsite-multicol-tr">
                                         <td class="wsite-multicol-col" style="width:48.306417035875%; padding:0 15px;">
 
-
-                                            <h2 class="wsite-content-title" style="text-align:center;">Seta<font
-                                                    size="6"><font size="7"></font></font>nta Berlin Gaelic Club e.V.
-                                            </h2>
-
-
                                             <div class="slideshow-container wsite-image wsite-image-border-none">
                                                 <div class="mySlides fade">
-                                                    <div class="numbertext">1 / 4</div>
+                                                    <img src="uploads/sb/dgaa_youth_poster.jpg"
+                                                         style="width:auto;max-width:100%;vertical-align:middle">
+                                                </div>
+
+                                                <div class="mySlides fade">
                                                     <img src="uploads/sb/sb_adults_1.jpg"
-                                                         style="width:auto;max-width:100%">
-                                                    <div class="text">Adult Hurling</div>
+                                                         style="width:auto;max-width:100%;vertical-align:middle">
                                                 </div>
 
                                                 <div class="mySlides fade">
-                                                    <div class="numbertext">2 / 4</div>
                                                     <img src="uploads/sb/sb_gdrei_1.jpg"
-                                                         style="width:auto;max-width:100%">
-                                                    <div class="text">Family events</div>
+                                                         style="width:auto;max-width:100%;vertical-align:middle">
                                                 </div>
 
                                                 <div class="mySlides fade">
-                                                    <div class="numbertext">3 / 4</div>
                                                     <img src="uploads/sb/sb_kids_1.jpg"
-                                                         style="width:auto;max-width:100%">
-                                                    <div class="text">Kids Hurling</div>
+                                                         style="width:auto;max-width:100%;vertical-align:middle">
                                                 </div>
 
                                                 <div class="mySlides fade">
-                                                    <div class="numbertext">4 / 4</div>
                                                     <img src="uploads/sb/sb_finnegans_1.jpg"
-                                                         style="width:auto;max-width:100%">
-                                                    <div class="text">Our Sponsor Team</div>
+                                                         style="width:auto;max-width:100%;vertical-align:middle">
                                                 </div>
 
-                                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
                                             </div>
                                             <br>
-
-                                            <div style="text-align:center">
-                                                <span class="dot" onclick="currentSlide(1)"></span>
-                                                <span class="dot" onclick="currentSlide(2)"></span>
-                                                <span class="dot" onclick="currentSlide(3)"></span>
-                                                <span class="dot" onclick="currentSlide(4)"></span>
-                                            </div>
 
                                             <script src="js/sb_car.js"></script>
 
 
-                                            <div class="paragraph" style="text-align:left;"><span>Welcome to Setanta Berlin, the first sports club in Berlin to focus on Irish sport and cultural activities.</span><br/><span>We run hurling and gaelic football training and practice in the South West of Berlin.</span><span>&#8203;</span>
-                                            </div>
-
-                                            <div class="paragraph" style="text-align:left;"><span>Setanta Berlin is affiliated to the GAA under the European County Board (Gaelic Games Europe).</span><span>&#8203;</span>
-                                            </div>
-
-                                            <div class="wsite-map">
-                                                <iframe allowtransparency="true" frameborder="0" scrolling="no"
-                                                        style="width: 100%; height: 250px; margin-top: 10px; margin-bottom: 10px;"
-                                                        src="http://www.weebly.com/weebly/apps/generateMap.php?map=google&elementid=209610465990119507&ineditor=0&control=3&width=auto&height=250px&overviewmap=0&scalecontrol=0&typecontrol=0&zoom=15&long=13.33552&lat=52.45726&domain=www&point=1&align=1&reseller=false"></iframe>
+                                            <div class="paragraph" style="text-align:left;">
+                                                <span>Welcome to Setanta Berlin. We are a gaelic sports club based in the German capital city.
+                                                    Join us for Sunday training at Gleisdreieck Park, or adult hurling training every Wednesday at Defender Field (see below for directions).</span>
+                                                <span>&#8203;</span>
                                             </div>
 
 
+                                            <div class="paragraph" style="text-align:left;">
+                                                <span>Our adult and kids will be competing in the 2017 European Hurling Finals in Dresden on 30 September.
+                                                    For more information, visit the Dresden Hurling web site <a href=" http://www.dresdenhurling.de/" target="_blank">here.</a> </span>
+                                                <span>&#8203;</span>
+                                            </div>
+
+                                            <div class="paragraph" style="text-align:left;">
+                                                <span>Setanta Berlin is affiliated to the GAA under the European County Board (Gaelic Games Europe).</span>
+                                                <span>&#8203;</span>
+                                            </div>
+
+                                            <div id="defenderfield-map"></div>
+                                            <div align="center" style="margin-bottom:6px">
+                                                <span class="map-text">Defender Field</span>
+                                            </div>
+                                            <div id="gleisdreieck-map"></div>
+                                            <div align="center">
+                                                <span class="map-text">Gleisdreieck Park</span>
+                                            </div>
                                         </td>
                                         <td class="wsite-multicol-col" style="width:51.693582964125%; padding:0 15px;">
-
-
                                             <div style="text-align:right;">
                                                 <div style="height:10px;overflow:hidden"></div>
                                                 <span class="wsite-social wsite-social-default"><a
@@ -192,10 +198,12 @@
                                             </div>
 
                                             <div>
-                                                <div id="221176913615179264" align="left"
-                                                     style="width: 100%; overflow-y: hidden;" class="wcustomhtml">
+                                                <div id="221176913615179264" align="center"
+                                                     style="width: 100%; overflow-y: hidden;">
                                                     <a class="twitter-timeline" href="https://twitter.com/SetantaBerlin"
-                                                       data-widget-id="547003074938937344">Tweets by @SetantaBerlin</a>
+                                                       data-widget-id="547003074938937344"
+                                                       data-width="90%"
+                                                       data-tweet-limit="3">Tweets by @SetantaBerlin</a>
                                                     <script>!function (d, s, id) {
                                                         var js, fjs = d.getElementsByTagName(s)[0],
                                                             p = /^http:/.test(d.location) ? 'http' : 'https';
@@ -209,7 +217,25 @@
                                                     </script>
                                                 </div>
                                             </div>
+                                            <div style="border-top:6px">
+                                                <div id="642609483710482319" align="center"
+                                                     style="width: 100%; overflow-y: hidden;">
+                                                    <div id="fb-root" style="width: 100%"></div>
+                                                    <script>(function (d, s, id) {
+                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                        if (d.getElementById(id)) return;
+                                                        js = d.createElement(s);
+                                                        js.id = id;
+                                                        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=134739300019221&version=v2.0";
+                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                    }(document, 'script', 'facebook-jssdk'));</script>
 
+                                                    <iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fsetanta.berlin.sport&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=134739300019221"
+                                                            scrolling="no" frameborder="0"
+                                                            style="border:none; overflow:hidden; height:120px;"
+                                                            allowTransparency="true"></iframe>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                     </tbody>
@@ -262,36 +288,11 @@
                             </div>
                         </div>
                     </div>
-
-                    <div>
-                        <div id="642609483710482319" align="center" style="width: 100%; overflow-y: hidden;"
-                             class="wcustomhtml">
-                            <div id="fb-root"></div>
-                            <script>(function (d, s, id) {
-                                var js, fjs = d.getElementsByTagName(s)[0];
-                                if (d.getElementById(id)) return;
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=134739300019221&version=v2.0";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }(document, 'script', 'facebook-jssdk'));</script>
-
-                            <iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fsetanta.berlin.sport&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=134739300019221"
-                                    scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:120px;"
-                                    allowTransparency="true"></iframe>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div><!-- end main-wrap -->
 
-    <div class="footer-wrap">
-        <div class="container">
-            <div class="footer">Create a <a target="_top" href="http://www.weebly.com/">free web site</a> with <a
-                    target="_top" href="http://www.weebly.com/" title="free web site">Weebly</a></div>
-        </div><!-- end container -->
-    </div><!-- end footer-wrap -->
 </div><!-- /.wrapper -->
 
 <div id="navMobile" class="nav mobile-nav">
@@ -305,6 +306,10 @@
         </li>
     </ul>
 </div>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzRQ85ZPv4Mn4C-XljLuiPSl-VaG7R_Ds&callback=initMaps">
+</script>
 
 <script type="text/javascript" src="files/theme/plugins.js"></script>
 <script type="text/javascript" src="files/theme/custom.js"></script>

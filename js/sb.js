@@ -10,21 +10,9 @@ var IS_ARCHIVE = 1;
                 "target": "",
                 "nav_menu": false
             }, {
-                "id": "587784099708366013",
-                "title": "Gallery",
-                "url": "gallery.html",
-                "target": "",
-                "nav_menu": false
-            }, {
                 "id": "537698818911676902",
                 "title": "Gaelic Sport",
                 "url": "gaelic-sport.html",
-                "target": "",
-                "nav_menu": false
-            }, {
-                "id": "833737426186876654",
-                "title": "Contact Us",
-                "url": "contact-us.html",
                 "target": "",
                 "nav_menu": false
             }],
@@ -50,4 +38,34 @@ var IS_ARCHIVE = 1;
         else document.observe('dom:loaded', initFlyouts);
     }
 })(window._W && _W.jQuery)
-//-->
+
+function initMaps() {
+  initDefenderFieldMap();
+  initGleiadreieckMap();
+}
+
+function initDefenderFieldMap() {
+    var defenderFieldPos = { lat: 52.429903, lng: 13.3150854 };
+    var df_map = new google.maps.Map(document.getElementById('defenderfield-map'), {
+        zoom: 14,
+        center: defenderFieldPos
+    });
+    var marker = new google.maps.Marker({
+        position: defenderFieldPos,
+        map: df_map
+    });
+}
+
+function initGleiadreieckMap() {
+
+    var gdFieldPos = { lat: 52.498001, lng: 13.372108 };
+    var gd_map = new google.maps.Map(document.getElementById('gleisdreieck-map'), {
+        zoom: 14,
+        center: gdFieldPos
+    });
+    var marker = new google.maps.Marker({
+        position: gdFieldPos,
+        map: gd_map
+    });
+}
+

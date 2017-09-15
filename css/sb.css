@@ -1,3 +1,16 @@
+
+#defenderfield-map {
+    height: 300px;
+    width: 100%;
+}
+
+#map-text {
+    font-family: "Actor" !important;
+    font-size: 16px !important;
+    color: #e05c5c !important;
+    text-align: center;
+}
+
 @font-face {
     font-family: 'wicons';
     src: url(//cdn2.editmysite.com/fonts/wIcons/wicons.eot?buildTime=1234);
